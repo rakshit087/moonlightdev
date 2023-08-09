@@ -3,7 +3,7 @@
   import '../global.css';
 </script>
 
-<main class="scroll-smooth bg-backdrop p-4 md:px-18">
+<main class="h-screen overflow-y-scroll scroll-smooth snap-mandatory snap-y">
   <Navbar />
   <slot />
 </main>
