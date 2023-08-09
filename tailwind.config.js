@@ -6,14 +6,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        backdrop: '#272829',
+        backdrop: '#272829'
+      },
+      fontFamily: {
+        display: [`'Press Start 2P'`, 'cursive']
       }
     }
   },
   plugins: [],
   future: {
     purgeLayersByDefault: true,
-    removeDeprecatedGapUtilities: true,
+    removeDeprecatedGapUtilities: true
   },
   purge: {
     content: ['./src/**/*.svelte', './src/**/*.html'],
