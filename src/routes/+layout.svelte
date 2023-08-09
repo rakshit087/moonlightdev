@@ -1,5 +1,7 @@
 <script>
-	import '../global.css';
+  import '../global.css';
 </script>
 
-<slot />
+<main class="h-screen overflow-y-scroll scroll-smooth snap-mandatory snap-y bg-backdrop">
+  <slot />
+</main>
