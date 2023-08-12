@@ -5,9 +5,6 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
-      colors: {
-        backdrop: '#272829'
-      },
       fontFamily: {
         display: [`'Press Start 2P'`, 'cursive']
       }

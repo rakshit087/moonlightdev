@@ -1,6 +1,6 @@
 <div class="flex flex-col justify-center h-full bg-white p-8 md:px-24" id="waitlist">
   <div class="flex flex-col mx-auto w-full max-w-2xl border-2 rounded-xl p-6 md:p-8 border-black">
-    <p class="md:text-5xl mb-8 text-4xl">we will be launching pretty soon... 🌙</p>
+    <p class="md:text-5xl mb-8 text-4xl">we will be launching pretty soon...</p>
     <p class="text-xl md:text-2xl">join our waitlist to get an early access to our beta!</p>
 
     <p class="mt-8 md:mt-12">where can we contact you?</p>

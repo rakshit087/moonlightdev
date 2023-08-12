@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class="h-full flex justify-center items-center flex-col snap-start snap-always bg-backdrop p-8 md:px-24 text-white"
+  class="h-full flex justify-center items-center flex-col snap-start snap-always bg-black p-8 md:px-24 text-white"
 >
   <h1 class="lg:text-8xl md:text-6xl font-display text-4xl">moonlight</h1>
   <h1 class="lg:text-8xl md:text-6xl font-display text-4xl">devs</h1>
