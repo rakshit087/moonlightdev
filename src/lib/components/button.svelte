@@ -1,10 +1,32 @@
 <script lang="ts">
   export let label: string;
-  export let customClasses: string = '';
 </script>
 
-<button
-  class="bg-yellow-50 py-2 text-sm lg:text-xl md:text-base px-6 md:px-8 lg:px-12 rounded-lg text-black {customClasses}"
->
+<button>
   {label}
 </button>
+
+<style lang="scss" scoped>
+  button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: small;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    button {
+      font-size: medium;
+      padding: 0.5rem 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    button {
+      font-size: large;
+      padding: 0.5rem 2.5rem;
+    }
+  }
+</style>
