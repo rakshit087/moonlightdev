@@ -2,7 +2,8 @@
   import Button from './button.svelte';
 </script>
 
-<div class="flex h-[50vh] mx-auto">
-  <Button label="find a job" />
-  <Button label="post a job" />
+<div class="flex h-[50vh] py-8 mx-auto">
+  <a href="#waitlist">
+    <Button label="take me to the moon! ✨" />
+  </a>
 </div>
