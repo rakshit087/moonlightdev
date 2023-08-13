@@ -1,7 +1,7 @@
 <script>
   import Moon from '$lib/assets/icons/moon.svelte';
   import SwapIcon from '$lib/assets/icons/swap_icon.svelte';
-  import { UserType, userType } from '$lib/store';
+  import { UserType, disableAnimations, userType } from '$lib/store';
   import Typewriter from 'svelte-typewriter';
 </script>
 
@@ -29,6 +29,7 @@
         userType.update((prev) =>
           prev === UserType.DEVELOPER ? UserType.ORGANIZATION : UserType.DEVELOPER
         );
+        disableAnimations.update(() => false);
       }}
     >
       <SwapIcon />

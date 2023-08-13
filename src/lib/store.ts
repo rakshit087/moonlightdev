@@ -6,3 +6,4 @@ export enum UserType {
 }
 
 export const userType: Writable<UserType> = writable(UserType.DEVELOPER);
+export const disableAnimations: Writable<boolean> = writable(true);
