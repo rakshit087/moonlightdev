@@ -9,6 +9,6 @@
 <Home />
 <MoonContainer>
   <JoinUs />
-  <About />
+  <!-- <About /> -->
   <Waitlist />
 </MoonContainer>

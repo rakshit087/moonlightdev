@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex h-[50vh] py-8 mx-auto">
-  <a href="#waitlist">
+  <a href="#waitlist" class="h-fit">
     <Button label="take me to the moon! ✨" />
   </a>
 </div>
