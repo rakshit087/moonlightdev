@@ -1,4 +1,4 @@
-<div class="h-screen flex items-center" id="waitlist">
+<div class="h-screen flex items-center snap-start" id="waitlist">
   <div
     class="flex flex-col mx-auto w-full max-w-2xl border-2 rounded-xl p-6 md:p-8 border-black backdrop-blur-sm"
   >
