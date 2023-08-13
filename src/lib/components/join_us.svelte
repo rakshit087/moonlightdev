@@ -2,7 +2,7 @@
   import Button from './button.svelte';
 </script>
 
-<div class="flex h-[50vh] py-8 mx-auto">
+<div class="flex h-[40vh] pt-8 mx-auto">
   <a href="#waitlist" class="h-fit">
     <Button label="take me to the moon! ✨" />
   </a>
