@@ -1,4 +1,4 @@
-<div class="h-screen snap-start snap-always relative">
+<div class="h-screen snap-start snap-always relative" id="waitlist">
   <div class="moon h-1/3" />
   <div
     class="flex flex-col mx-auto w-4/5 max-w-2xl border-2 rounded-xl p-6 md:p-8 border-black bg-white backdrop-blur-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"

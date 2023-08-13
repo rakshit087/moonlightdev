@@ -1,5 +1,5 @@
 <script>
-  import ForDevs from '$lib/components/for_devs.svelte';
+  import About from '$lib/components/about.svelte';
   import Home from '$lib/components/home.svelte';
   import JoinUs from '$lib/components/join_us.svelte';
   import MoonContainer from '$lib/components/moon_container.svelte';
@@ -9,6 +9,6 @@
 <Home />
 <MoonContainer>
   <JoinUs />
-  <ForDevs />
+  <About />
 </MoonContainer>
 <Waitlist />

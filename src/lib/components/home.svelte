@@ -1,4 +1,4 @@
-<div class="h-3/5 flex flex-col justify-end snap-start snap-always">
+<div class="h-[60vh] flex flex-col justify-end snap-start snap-always">
   <h1 class="font-display text-white text-center text-4xl md:text-7xl lg:text-7xl mb-8">
     moonlight <br /> devs
   </h1>
