@@ -1,4 +1,4 @@
-<div class="moon py-8">
+<div class="moon py-8 px-4 md:px-20 lg:px-24">
   <slot />
 </div>
 
@@ -9,9 +9,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
-    clip-path: ellipse(120% 100% at 50% 100%);
+    clip-path: ellipse(250% 100% at 50% 100%);
     display: flex;
     flex-direction: column;
     margin: 3rem 0;
+  }
+
+  @media (min-width: 768px) {
+    .moon {
+      clip-path: ellipse(185% 100% at 50% 100%);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .moon {
+      clip-path: ellipse(120% 100% at 50% 100%);
+    }
   }
 </style>
