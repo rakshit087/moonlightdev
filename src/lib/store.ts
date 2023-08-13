@@ -1,8 +1,8 @@
 import { writable, type Writable } from "svelte/store";
 
-enum UserType {
-    Developer,
-    Organization
+export enum UserType {
+    DEVELOPER,
+    ORGANIZATION
 }
 
-export const userType: Writable<UserType> = writable(UserType.Developer);
+export const userType: Writable<UserType> = writable(UserType.DEVELOPER);

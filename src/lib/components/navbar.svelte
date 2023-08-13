@@ -1,6 +1,8 @@
 <script>
   import Moon from '$lib/assets/icons/moon.svelte';
   import SwapIcon from '$lib/assets/icons/swap_icon.svelte';
+  import { UserType, userType } from '$lib/store';
+  import Typewriter from 'svelte-typewriter';
 </script>
 
 <nav
@@ -12,7 +14,24 @@
     <a href="#waitlist">Waitlist</a>
   </div>
   <div class="flex items-center text-white">
-    <p class="text-sm md:text-lg mr-4 lg:mr-8 hidden md:block">Developer</p>
-    <SwapIcon class="text-3xl" />
+    <Typewriter mode="scramble" scrambleDuration={500}>
+      <p class="text-sm md:text-lg mr-4 lg:mr-8 hidden md:block">
+        {#if $userType === UserType.DEVELOPER}
+          Developer
+        {:else}
+          Organization
+        {/if}
+      </p>
+    </Typewriter>
+    <button
+      class="text-3xl cursor-pointer hover:bg-white hover:text-black transition-colors rounded-md"
+      on:click={() => {
+        userType.update((prev) =>
+          prev === UserType.DEVELOPER ? UserType.ORGANIZATION : UserType.DEVELOPER
+        );
+      }}
+    >
+      <SwapIcon />
+    </button>
   </div>
 </nav>
