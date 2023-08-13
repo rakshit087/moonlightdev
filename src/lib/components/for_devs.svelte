@@ -2,7 +2,7 @@
   import StepCard from './step_card.svelte';
 </script>
 
-<div id="devs" class="min-h-screen flex flex-col justify-center snap-start snap-always">
+<div id="devs" class="min-h-screen flex flex-col justify-center snap-start snap-always py-12">
   <p class="text-4xl font-semibold">Find awesome <br /> moonlighting opportunities</p>
   <p class="mt-4 text-xl">
     We help you find long-term part time contract based work to earn some side income.
