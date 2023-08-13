@@ -9,6 +9,5 @@
   <div class="text-sm md:text-lg text-white">
     <a href="#about" class="mr-4 lg:mr-8">About</a>
     <a href="#waitlist" class="mr-4 lg:mr-8">Waitlist</a>
-    <a href="/">FAQ</a>
   </div>
 </nav>
