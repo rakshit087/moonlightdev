@@ -4,6 +4,9 @@
 
 <div class="flex h-[40vh] pt-8 mx-auto">
   <a href="#waitlist" class="h-fit">
-    <Button label="take me to the moon! ✨" />
+    <Button label="find a job ✨" />
+  </a>
+  <a href="#waitlist" class="h-fit">
+    <Button label="post a job 👑" />
   </a>
 </div>
