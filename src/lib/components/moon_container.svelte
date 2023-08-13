@@ -1,4 +1,4 @@
-<div class="moon py-8 px-4 md:px-20 lg:px-24">
+<div class="moon px-4 md:px-20 lg:px-24">
   <slot />
 </div>
 
@@ -12,7 +12,6 @@
     clip-path: ellipse(250% 100% at 50% 100%);
     display: flex;
     flex-direction: column;
-    margin: 3rem 0;
   }
 
   @media (min-width: 768px) {
