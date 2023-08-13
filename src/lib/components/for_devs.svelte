@@ -1,5 +1,5 @@
 <script>
-  import StepCard from './StepCard.svelte';
+  import StepCard from './step_card.svelte';
 </script>
 
 <div id="devs" class="h-screen flex flex-col justify-center snap-start snap-always">
