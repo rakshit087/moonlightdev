@@ -1,9 +1,16 @@
 <script>
   import StepCard from './step_card.svelte';
+  import Typewriter from './typewriter.svelte';
+  import { userType, UserType } from '$lib/store';
 </script>
 
 <div id="about" class="min-h-screen flex flex-col justify-center snap-start snap-always py-12">
-  <p class="text-4xl font-semibold">Find awesome <br /> moonlighting opportunities</p>
+  <p class="text-4xl font-semibold">Find awesome</p>
+  {#if $userType === UserType.DEVELOPER}
+    <Typewriter customClasses="text-4xl font-semibold" text="moonlighting opportunities" />
+  {:else}
+    <Typewriter customClasses="text-4xl font-semibold" text="developers for your project" />
+  {/if}
   <p class="mt-4 text-xl">
     We help you find long-term part time contract based work to earn some side income.
   </p>

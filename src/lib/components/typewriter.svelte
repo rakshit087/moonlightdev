@@ -11,7 +11,7 @@
     {text}
   </p>
 {:else}
-  <div class="flex mx-auto {customClasses}">
+  <div class="flex {customClasses}">
     {text.slice(0, 2)}
     <Typewriter mode="scramble" scrambleDuration={500} element="span">
       {text.slice(2)}

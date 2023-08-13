@@ -9,12 +9,12 @@
   </h1>
   {#if $userType === UserType.DEVELOPER}
     <Typewriter
-      customClasses="text-white text-center text-lg md:text-3xl mb-24"
+      customClasses="text-white text-center text-lg md:text-3xl mb-24 mx-auto"
       text={'find your next side hustle ✨'}
     />
   {:else}
     <Typewriter
-      customClasses="text-white text-center text-lg md:text-3xl mb-24"
+      customClasses="text-white text-center text-lg md:text-3xl mb-24 mx-auto"
       text={'find part time devs on demand ✨'}
     />
   {/if}
