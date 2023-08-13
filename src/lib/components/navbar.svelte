@@ -2,7 +2,8 @@
   import Moon from '$lib/assets/icons/moon.svelte';
   import SwapIcon from '$lib/assets/icons/swap_icon.svelte';
   import { UserType, disableAnimations, userType } from '$lib/store';
-  import Typewriter from 'svelte-typewriter';
+  // import Typewriter from 'svelte-typewriter';
+  import Typewriter from '$lib/components/typewriter.svelte';
 </script>
 
 <nav
@@ -14,15 +15,13 @@
     <a href="#waitlist">Waitlist</a>
   </div>
   <div class="flex items-center text-white">
-    <Typewriter mode="scramble" scrambleDuration={500}>
-      <p class="text-sm md:text-lg mr-4 lg:mr-8 hidden md:block">
-        {#if $userType === UserType.DEVELOPER}
-          Developer
-        {:else}
-          Organization
-        {/if}
-      </p>
-    </Typewriter>
+    <div class="hidden md:block">
+      {#if $userType === UserType.DEVELOPER}
+        <Typewriter customClasses="text-sm md:text-lg mr-4 lg:mr-8" text="Developer" />
+      {:else}
+        <Typewriter customClasses="text-sm md:text-lg mr-4 lg:mr-8" text="Organisation" />
+      {/if}
+    </div>
     <button
       class="text-3xl cursor-pointer hover:bg-white hover:text-black transition-colors rounded-md"
       on:click={() => {
