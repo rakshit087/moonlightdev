@@ -7,9 +7,9 @@
 >
   <Moon class="text-white text-3xl" />
   <div class="text-sm md:text-lg text-white">
-    <a href="/" class="mr-4 lg:mr-8">About</a>
-    <a href="/" class="mr-4 lg:mr-8">Features</a>
-    <a href="/" class="mr-4 lg:mr-8">FAQ</a>
-    <a href="#waitlist">Waitlist</a>
+    <a href="#devs" class="mr-4 lg:mr-8">For Devs</a>
+    <a href="/" class="mr-4 lg:mr-8">For Orgs</a>
+    <a href="#waitlist" class="mr-4 lg:mr-8">Waitlist</a>
+    <a href="/">FAQ</a>
   </div>
 </nav>
