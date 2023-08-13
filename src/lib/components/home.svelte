@@ -8,16 +8,14 @@
     moonlight <br /> devs
   </h1>
   {#if $userType === UserType.DEVELOPER}
-    <Typewriter>
-      <p class="text-white text-center text-lg md:text-3xl mb-24">
-        A platform for developers to find their dream job.
-      </p>
-    </Typewriter>
+    <Typewriter
+      customClasses="text-white text-center text-lg md:text-3xl mb-24"
+      text={'find your next side hustle ✨'}
+    />
   {:else}
-    <Typewriter>
-      <p class="text-white text-center text-lg md:text-3xl mb-24">
-        A platform for developers to find their dream developer.
-      </p>
-    </Typewriter>
+    <Typewriter
+      customClasses="text-white text-center text-lg md:text-3xl mb-24"
+      text={'find part time devs on demand ✨'}
+    />
   {/if}
 </div>

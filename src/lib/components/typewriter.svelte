@@ -1,12 +1,20 @@
 <script lang="ts">
   import { disableAnimations } from '$lib/store';
   import Typewriter from 'svelte-typewriter';
+
+  export let text: string;
+  export let customClasses: string;
 </script>
 
 {#if $disableAnimations}
-  <slot />
+  <p class={customClasses}>
+    {text}
+  </p>
 {:else}
-  <Typewriter mode="scramble" scrambleDuration={500}>
-    <slot />
-  </Typewriter>
+  <div class="flex mx-auto {customClasses}">
+    {text.slice(0, 2)}
+    <Typewriter mode="scramble" scrambleDuration={500} element="span">
+      {text.slice(2)}
+    </Typewriter>
+  </div>
 {/if}
