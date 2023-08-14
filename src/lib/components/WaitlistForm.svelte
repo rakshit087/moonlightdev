@@ -1,6 +1,8 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
   export let form: any;
+
+  let loading = false;
 </script>
 
 <div
@@ -10,7 +12,17 @@
   <p class="text-lg md:text-2xl">join our waitlist to get an early access to our beta!</p>
 
   <p class="mt-8 md:mt-12">where can we contact you?</p>
-  <form method="POST" action="?/addToWaitlist" use:enhance>
+  <form
+    method="POST"
+    action="?/addToWaitlist"
+    use:enhance={() => {
+      loading = true;
+      return async ({ update }) => {
+        loading = false;
+        update();
+      };
+    }}
+  >
     <input
       type="text"
       placeholder="anon@moonlightdevs.xyz"
@@ -27,8 +39,17 @@
       <option value="dev">find part time jobs</option>
       <option value="org">hire devs</option>
     </select>
-    <button class="bg-black text-white rounded-lg p-2 mt-8 md:mt-10 w-full focus:border-black">
-      join waitlist
+    <button
+      class="bg-black text-white rounded-lg p-2 mt-8 md:mt-10 w-full focus:border-black"
+      disabled={loading}
+    >
+      {#if loading}
+        <div class="flex justify-center items-center">
+          <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-white" />
+        </div>
+      {:else}
+        join the waitlist
+      {/if}
     </button>
     {#if form?.success}
       <p class="text-black mt-1 md:mt-2">Successfully added to the waitlist</p>
