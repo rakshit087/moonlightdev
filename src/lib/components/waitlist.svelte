@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
   import WaitlistForm from './WaitlistForm.svelte';
+  export let form: any;
 </script>
 
 <div class="h-screen snap-start snap-always relative" id="waitlist">
   <div class="moon h-1/3" />
-  <WaitlistForm />
+  <WaitlistForm {form} />
 </div>
 
 <style>
