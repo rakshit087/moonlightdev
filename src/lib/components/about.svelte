@@ -2,6 +2,7 @@
   import StepCard from './step_card.svelte';
   import Typewriter from './typewriter.svelte';
   import { userType, UserType } from '$lib/store';
+  import autoAnimate from '@formkit/auto-animate';
 </script>
 
 <div id="about" class="min-h-screen flex flex-col justify-center snap-start snap-always py-12">
@@ -11,7 +12,7 @@
   {:else}
     <Typewriter customClasses="text-4xl font-semibold" text="developers for your project" />
   {/if}
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-16">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-16 h-48" use:autoAnimate>
     {#if $userType === UserType.DEVELOPER}
       <StepCard
         step="1"
