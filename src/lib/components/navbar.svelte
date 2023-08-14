@@ -1,7 +1,7 @@
 <script>
   import Moon from '$lib/assets/icons/moon.svelte';
   import SwapIcon from '$lib/assets/icons/swap_icon.svelte';
-  import TypewriterDual from './typewriter_dual.svelte';
+  import TypewriterDual from './TypewriterDual.svelte';
   import { swapUserType } from '$lib/utils/swapUser';
   import { enableAnimations } from '$lib/utils/enableAnimations';
 </script>

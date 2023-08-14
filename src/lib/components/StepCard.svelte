@@ -11,7 +11,7 @@
     </div>
     <p class="ml-4 text-xl font-semibold">{title}</p>
   </div>
-  <p class="mt-4">
+  <p class="mt-4 h-24">
     {description}
   </p>
 </div>
