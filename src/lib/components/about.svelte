@@ -1,5 +1,4 @@
 <script>
-  import autoAnimate from '@formkit/auto-animate';
   import TypewriterDual from './typewriter_dual.svelte';
   import StepCardDual from './stepcard_dual.svelte';
 </script>
@@ -7,11 +6,11 @@
 <div id="about" class="min-h-screen flex flex-col justify-center snap-start snap-always py-12">
   <p class="text-4xl font-semibold">Find awesome</p>
   <TypewriterDual
-    customClasses="text-4xl font-semibold"
+    customClasses="text-xl md:text-4xl font-semibold"
     devText="moonlighting opportunities"
     orgText="developers for your project"
   />
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-16 h-48" use:autoAnimate>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-16">
     <StepCardDual
       step="1"
       devTitle="Make a profile"
@@ -31,7 +30,7 @@
       devTitle="Get hired 🚀"
       devDescription="If the client likes your proposal, they'll reach out to you. You can negotiate the terms and get started."
       orgTitle="Hire a developer"
-      orgDescription="Once you find the right developer, you can negotiate the terms and get started."
+      orgDescription="Once you find the right developer, you can connect with them directly, negotiate the terms, and get started."
     />
   </div>
 </div>
