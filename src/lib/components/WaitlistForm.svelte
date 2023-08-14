@@ -3,8 +3,6 @@
   export let form: any;
 
   let loading = false;
-
-  $: console.log(form);
 </script>
 
 <div
