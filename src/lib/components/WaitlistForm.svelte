@@ -3,6 +3,8 @@
   export let form: any;
 
   let loading = false;
+
+  $: console.log(form);
 </script>
 
 <div
@@ -53,6 +55,9 @@
     </button>
     {#if form?.success}
       <p class="text-black mt-1 md:mt-2">Successfully added to the waitlist</p>
+    {/if}
+    {#if form?.exists}
+      <p class="text-red-500 text-sm mt-1 md:mt-2">Already added to the waitlist</p>
     {/if}
   </form>
 </div>

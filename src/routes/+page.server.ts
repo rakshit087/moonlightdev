@@ -30,7 +30,10 @@ export const actions: Actions = {
       });
       return { success: true };
     } catch (error) {
-      return { success: false };
+      if (error.code === 'P2002') {
+        return fail(400, { email, exists: true });
+      }
+      return { error: true };
     }
   }
 };
