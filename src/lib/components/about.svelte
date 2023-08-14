@@ -1,6 +1,7 @@
 <script>
   import TypewriterDual from './typewriter_dual.svelte';
   import StepCardDual from './stepcard_dual.svelte';
+  import autoAnimate from '@formkit/auto-animate';
 </script>
 
 <div id="about" class="min-h-screen flex flex-col justify-center snap-start snap-always py-12">
@@ -10,7 +11,7 @@
     devText="moonlighting opportunities"
     orgText="developers for your project"
   />
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-16">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-16" use:autoAnimate>
     <StepCardDual
       step="1"
       devTitle="Make a profile"
