@@ -1,9 +1,9 @@
 <script>
   import Moon from '$lib/assets/icons/moon.svelte';
   import SwapIcon from '$lib/assets/icons/swap_icon.svelte';
-  import { UserType, disableAnimations, userType } from '$lib/store';
-  // import Typewriter from 'svelte-typewriter';
-  import Typewriter from '$lib/components/typewriter.svelte';
+  import TypewriterDual from './typewriter_dual.svelte';
+  import { swapUserType } from '$lib/utils/swapUser';
+  import { enableAnimations } from '$lib/utils/enableAnimations';
 </script>
 
 <nav
@@ -16,19 +16,17 @@
   </div>
   <div class="flex items-center text-white">
     <div class="hidden md:block">
-      {#if $userType === UserType.DEVELOPER}
-        <Typewriter customClasses="text-sm md:text-lg mr-4 lg:mr-8" text="Developer" />
-      {:else}
-        <Typewriter customClasses="text-sm md:text-lg mr-4 lg:mr-8" text="Organisation" />
-      {/if}
+      <TypewriterDual
+        customClasses="text-sm md:text-lg mr-4 lg:mr-8"
+        devText="Developer"
+        orgText="Organisation"
+      />
     </div>
     <button
       class="text-3xl cursor-pointer hover:bg-white hover:text-black transition-colors rounded-md"
       on:click={() => {
-        userType.update((prev) =>
-          prev === UserType.DEVELOPER ? UserType.ORGANIZATION : UserType.DEVELOPER
-        );
-        disableAnimations.update(() => false);
+        swapUserType();
+        enableAnimations();
       }}
     >
       <SwapIcon />
