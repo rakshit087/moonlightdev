@@ -1,6 +1,6 @@
 <script lang="ts">
   import { UserType, userType } from '$lib/store';
-  import StepCard from './step_card.svelte';
+  import StepCard from './StepCard.svelte';
   export let step: string;
   export let devTitle: string;
   export let devDescription: string;

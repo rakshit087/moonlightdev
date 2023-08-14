@@ -1,5 +1,5 @@
 <script lang="ts">
-  import TypewriterDual from './typewriter_dual.svelte';
+  import TypewriterDual from './TypewriterDual.svelte';
 </script>
 
 <div class="h-[60vh] flex flex-col justify-end snap-start snap-always">

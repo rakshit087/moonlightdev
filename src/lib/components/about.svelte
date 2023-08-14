@@ -1,6 +1,6 @@
 <script>
-  import TypewriterDual from './typewriter_dual.svelte';
-  import StepCardDual from './stepcard_dual.svelte';
+  import TypewriterDual from './TypewriterDual.svelte';
+  import StepCardDual from './StepcardDual.svelte';
   import autoAnimate from '@formkit/auto-animate';
 </script>
 
